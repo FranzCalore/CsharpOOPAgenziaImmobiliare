@@ -15,14 +15,19 @@ namespace Csharp_OOP_Agenzia_Immobiliare
         private string città;
         private double metratura;
 
-        public Immobile(string codice, string indirizzo, string cap, string città, double metratura)
+        public Immobile(string indirizzo, string cap, string città, double metratura)
         {
-            this.codice = codice;
+            this.codice = "";
             this.indirizzo = indirizzo;
             this.cap = cap;
             this.città = città;
             this.metratura = metratura;
             ListaImmobili.Add(this);
+        }
+
+        public List<Immobile> GetListaImmobili()
+        {
+            return ListaImmobili;
         }
 
         public string GetCodice()

@@ -10,7 +10,7 @@ namespace Csharp_OOP_Agenzia_Immobiliare
     {
         private int postiAuto;
 
-        public Box(string codice, int postiAuto, string indirizzo, string cap, string città, double metratura) :base(codice,indirizzo,cap,città,metratura)
+        public Box(int postiAuto, string indirizzo, string cap, string città, double metratura) :base(indirizzo,cap,città,metratura)
         {
             this.postiAuto = postiAuto;
         }

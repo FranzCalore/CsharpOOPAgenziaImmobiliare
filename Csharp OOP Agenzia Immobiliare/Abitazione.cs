@@ -11,7 +11,7 @@ namespace Csharp_OOP_Agenzia_Immobiliare
         private int numeroVani;
         private int numeroBagni;
 
-        public Abitazione(string codice, string indirizzo, string cap, string città, double metratura, int numeroVani, int numeroBagni):base(codice,indirizzo,cap,città,metratura)
+        public Abitazione(string indirizzo, string cap, string città, double metratura, int numeroVani, int numeroBagni):base(indirizzo,cap,città,metratura)
         {
             this.numeroVani = numeroVani;
             this.numeroBagni = numeroBagni;

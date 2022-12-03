@@ -10,7 +10,7 @@ namespace Csharp_OOP_Agenzia_Immobiliare
     {
         private double metraturaGiardino;
 
-        public Villa(string codice, string indirizzo, string cap, string città, double metratura, int numeroVani, int numeroBagni, double metraturaGiardino):base(codice,indirizzo,cap,città,metratura,numeroVani,numeroBagni)
+        public Villa(string indirizzo, string cap, string città, double metratura, int numeroVani, int numeroBagni, double metraturaGiardino):base(indirizzo,cap,città,metratura,numeroVani,numeroBagni)
         {
             this.metraturaGiardino = metraturaGiardino;
         }

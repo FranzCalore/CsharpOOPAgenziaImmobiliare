@@ -3,14 +3,14 @@
 
 using Csharp_OOP_Agenzia_Immobiliare;
 
-Immobile immobile1 = new Immobile("00012ABC", "via fasulla123", "0014", "colbacco", 20);
-Abitazione immobile2 = new Abitazione("00015ABC", "via fasulla123", "0014", "colbacco", 40, 5, 2);
-Villa immobile3 = new Villa("00018ABC", "via fasulla123", "0014", "colbacco", 60, 8, 2, 30);
-Box immobile4 = new Box("00020ABC", 2, "via fasulla456", "0020", "Roma", 100);
+Immobile immobile1 = new Immobile("via fasulla123", "0014", "colbacco", 20);
+Abitazione immobile2 = new Abitazione("via fasulla123", "0014", "colbacco", 40, 5, 2);
+Villa immobile3 = new Villa("via fasulla123", "0014", "colbacco", 60, 8, 2, 30);
+Box immobile4 = new Box(2, "via fasulla456", "0020", "Roma", 100);
+Villa immobile5 = new Villa("piazza Outer Wilds", "1900", "Roma", 300, 30, 5, 2000);
 
-List<Immobile> listaImmobiliare = new List<Immobile>() { immobile1, immobile2, immobile3, immobile4 };
 
-foreach (Immobile immobile in listaImmobiliare)
+foreach (Immobile immobile in immobile1.GetListaImmobili())
 {
     Console.WriteLine(immobile.ToString());
 }
